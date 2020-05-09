@@ -1,0 +1,2799 @@
+
+*** Running vivado
+    with args -log Top_Student.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_Student.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source Top_Student.tcl -notrace
+Command: synth_design -top Top_Student -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 5376 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 397.906 ; gain = 111.617
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Top_Student' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:18]
+INFO: [Synth 8-6157] synthesizing module 'slow_clock' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/clock_dff_spc.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'slow_clock' (1#1) [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/clock_dff_spc.v:21]
+INFO: [Synth 8-6157] synthesizing module 'single_pulse_circuit' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/clock_dff_spc.v:38]
+INFO: [Synth 8-6157] synthesizing module 'my_dff' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/clock_dff_spc.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'my_dff' (2#1) [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/clock_dff_spc.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'single_pulse_circuit' (3#1) [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/clock_dff_spc.v:38]
+INFO: [Synth 8-6157] synthesizing module 'Oled_Display' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Display.v:36]
+	Parameter Width bound to: 96 - type: integer 
+	Parameter Height bound to: 64 - type: integer 
+	Parameter PixelCount bound to: 6144 - type: integer 
+	Parameter PixelCountWidth bound to: 13 - type: integer 
+	Parameter ClkFreq bound to: 6250000 - type: integer 
+	Parameter FrameFreq bound to: 60 - type: integer 
+	Parameter FrameDiv bound to: 104166 - type: integer 
+	Parameter FrameDivWidth bound to: 17 - type: integer 
+	Parameter PowerDelay bound to: 20 - type: integer 
+	Parameter ResetDelay bound to: 3 - type: integer 
+	Parameter VccEnDelay bound to: 20 - type: integer 
+	Parameter StartupCompleteDelay bound to: 100 - type: integer 
+	Parameter MaxDelay bound to: 100 - type: integer 
+	Parameter MaxDelayCount bound to: 625000 - type: integer 
+	Parameter StateCount bound to: 32 - type: integer 
+	Parameter StateWidth bound to: 5 - type: integer 
+	Parameter PowerUp bound to: 5'b00000 
+	Parameter Reset bound to: 5'b00001 
+	Parameter ReleaseReset bound to: 5'b00011 
+	Parameter EnableDriver bound to: 5'b00010 
+	Parameter DisplayOff bound to: 5'b00110 
+	Parameter SetRemapDisplayFormat bound to: 5'b00111 
+	Parameter SetStartLine bound to: 5'b00101 
+	Parameter SetOffset bound to: 5'b00100 
+	Parameter SetNormalDisplay bound to: 5'b01100 
+	Parameter SetMultiplexRatio bound to: 5'b01101 
+	Parameter SetMasterConfiguration bound to: 5'b01111 
+	Parameter DisablePowerSave bound to: 5'b01110 
+	Parameter SetPhaseAdjust bound to: 5'b01010 
+	Parameter SetDisplayClock bound to: 5'b01011 
+	Parameter SetSecondPrechargeA bound to: 5'b01001 
+	Parameter SetSecondPrechargeB bound to: 5'b01000 
+	Parameter SetSecondPrechargeC bound to: 5'b11000 
+	Parameter SetPrechargeLevel bound to: 5'b11001 
+	Parameter SetVCOMH bound to: 5'b11011 
+	Parameter SetMasterCurrent bound to: 5'b11010 
+	Parameter SetContrastA bound to: 5'b11110 
+	Parameter SetContrastB bound to: 5'b11111 
+	Parameter SetContrastC bound to: 5'b11101 
+	Parameter DisableScrolling bound to: 5'b11100 
+	Parameter ClearScreen bound to: 5'b10100 
+	Parameter VccEn bound to: 5'b10101 
+	Parameter DisplayOn bound to: 5'b10111 
+	Parameter PrepareNextFrame bound to: 5'b10110 
+	Parameter SetColAddress bound to: 5'b10010 
+	Parameter SetRowAddress bound to: 5'b10011 
+	Parameter WaitNextFrame bound to: 5'b10001 
+	Parameter SendPixel bound to: 5'b10000 
+	Parameter SpiCommandMaxWidth bound to: 40 - type: integer 
+	Parameter SpiCommandBitCountWidth bound to: 6 - type: integer 
+INFO: [Synth 8-226] default block is never used [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Display.v:124]
+INFO: [Synth 8-226] default block is never used [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Display.v:201]
+WARNING: [Synth 8-693] zero replication count - replication ignored [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Display.v:349]
+INFO: [Synth 8-6155] done synthesizing module 'Oled_Display' (4#1) [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Display.v:36]
+INFO: [Synth 8-6157] synthesizing module 'Audio_Capture' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/Audio_Capture.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'Audio_Capture' (5#1) [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/Audio_Capture.v:25]
+INFO: [Synth 8-6157] synthesizing module 'peak_volume' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/peak_volume.v:23]
+	Parameter cycle bound to: 6666 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'peak_volume' (6#1) [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/peak_volume.v:23]
+INFO: [Synth 8-6157] synthesizing module 'TaskB' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/TaskB.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'TaskB' (7#1) [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/TaskB.v:23]
+INFO: [Synth 8-6157] synthesizing module 'multiple_bar_volume_depiction' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/16_bar_volume_depiction.v:23]
+WARNING: [Synth 8-6090] variable 'max_volume' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/16_bar_volume_depiction.v:51]
+WARNING: [Synth 8-6014] Unused sequential element volume_level_reg was removed.  [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/16_bar_volume_depiction.v:42]
+WARNING: [Synth 8-6014] Unused sequential element i_reg was removed.  [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/16_bar_volume_depiction.v:44]
+INFO: [Synth 8-6155] done synthesizing module 'multiple_bar_volume_depiction' (8#1) [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/16_bar_volume_depiction.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Mode_multi_bar' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/Mode_multi_bar.v:23]
+INFO: [Synth 8-6157] synthesizing module 'VolumeBar' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/VolumeBar.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'VolumeBar' (9#1) [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/VolumeBar.v:23]
+INFO: [Synth 8-6157] synthesizing module 'FloatBar' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/FloatBar.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'FloatBar' (10#1) [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/FloatBar.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Mode_multi_bar' (11#1) [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/Mode_multi_bar.v:23]
+INFO: [Synth 8-6157] synthesizing module 'continuous_volume_depiction' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/continuous_volume_depiction.v:23]
+WARNING: [Synth 8-6090] variable 'max_volume' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/continuous_volume_depiction.v:54]
+WARNING: [Synth 8-6014] Unused sequential element volume_level_reg was removed.  [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/continuous_volume_depiction.v:43]
+WARNING: [Synth 8-6014] Unused sequential element i_reg was removed.  [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/continuous_volume_depiction.v:47]
+INFO: [Synth 8-6155] done synthesizing module 'continuous_volume_depiction' (12#1) [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/continuous_volume_depiction.v:23]
+INFO: [Synth 8-6157] synthesizing module 'frequency_generator' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/frequency_generator.v:23]
+	Parameter N bound to: 18 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'frequency_generator' (13#1) [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/frequency_generator.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Continuous_full_bar' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/Continuous_full_bar.v:23]
+INFO: [Synth 8-6157] synthesizing module 'UpDownBarIndividual' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/UpDownBarIndividual.v:23]
+	Parameter middleU bound to: 31 - type: integer 
+	Parameter middleD bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'UpDownBarIndividual' (14#1) [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/UpDownBarIndividual.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Continuous_full_bar' (15#1) [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/Continuous_full_bar.v:23]
+INFO: [Synth 8-6157] synthesizing module 'volume_7_seg' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/volume_7_seg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'volume_7_seg' (16#1) [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/volume_7_seg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'frequency_generator__parameterized0' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/frequency_generator.v:23]
+	Parameter N bound to: 21 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'frequency_generator__parameterized0' (16#1) [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/frequency_generator.v:23]
+INFO: [Synth 8-6157] synthesizing module 'frequency_generator__parameterized1' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/frequency_generator.v:23]
+	Parameter N bound to: 25 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'frequency_generator__parameterized1' (16#1) [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/frequency_generator.v:23]
+INFO: [Synth 8-6157] synthesizing module 'frequency_generator__parameterized2' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/frequency_generator.v:23]
+	Parameter N bound to: 24 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'frequency_generator__parameterized2' (16#1) [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/frequency_generator.v:23]
+INFO: [Synth 8-6157] synthesizing module 'frequency_generator__parameterized3' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/frequency_generator.v:23]
+	Parameter N bound to: 23 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'frequency_generator__parameterized3' (16#1) [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/frequency_generator.v:23]
+INFO: [Synth 8-6157] synthesizing module 'frequency_generator__parameterized4' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/frequency_generator.v:23]
+	Parameter N bound to: 22 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'frequency_generator__parameterized4' (16#1) [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/frequency_generator.v:23]
+INFO: [Synth 8-6157] synthesizing module 'frequency_generator__parameterized5' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/frequency_generator.v:23]
+	Parameter N bound to: 19 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'frequency_generator__parameterized5' (16#1) [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/frequency_generator.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Car_game' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/Car.v:22]
+	Parameter state_title bound to: 0 - type: integer 
+	Parameter state_choose_car bound to: 1 - type: integer 
+	Parameter state_choose_track bound to: 2 - type: integer 
+	Parameter state_ready bound to: 3 - type: integer 
+	Parameter state_game bound to: 4 - type: integer 
+	Parameter state_finish bound to: 5 - type: integer 
+	Parameter state_congrats bound to: 6 - type: integer 
+	Parameter state_gameover bound to: 7 - type: integer 
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/Car.v:104]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_title' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.runs/synth_1/.Xil/Vivado-4816-DESKTOP-I7MQFLR/realtime/blk_mem_title_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_title' (17#1) [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.runs/synth_1/.Xil/Vivado-4816-DESKTOP-I7MQFLR/realtime/blk_mem_title_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_choosecar1' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.runs/synth_1/.Xil/Vivado-4816-DESKTOP-I7MQFLR/realtime/blk_mem_choosecar1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_choosecar1' (18#1) [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.runs/synth_1/.Xil/Vivado-4816-DESKTOP-I7MQFLR/realtime/blk_mem_choosecar1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_choosecar2' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.runs/synth_1/.Xil/Vivado-4816-DESKTOP-I7MQFLR/realtime/blk_mem_choosecar2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_choosecar2' (19#1) [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.runs/synth_1/.Xil/Vivado-4816-DESKTOP-I7MQFLR/realtime/blk_mem_choosecar2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_choosecar3' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.runs/synth_1/.Xil/Vivado-4816-DESKTOP-I7MQFLR/realtime/blk_mem_choosecar3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_choosecar3' (20#1) [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.runs/synth_1/.Xil/Vivado-4816-DESKTOP-I7MQFLR/realtime/blk_mem_choosecar3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_choosetrack1' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.runs/synth_1/.Xil/Vivado-4816-DESKTOP-I7MQFLR/realtime/blk_mem_choosetrack1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_choosetrack1' (21#1) [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.runs/synth_1/.Xil/Vivado-4816-DESKTOP-I7MQFLR/realtime/blk_mem_choosetrack1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_choosetrack2' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.runs/synth_1/.Xil/Vivado-4816-DESKTOP-I7MQFLR/realtime/blk_mem_choosetrack2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_choosetrack2' (22#1) [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.runs/synth_1/.Xil/Vivado-4816-DESKTOP-I7MQFLR/realtime/blk_mem_choosetrack2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gameover' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.runs/synth_1/.Xil/Vivado-4816-DESKTOP-I7MQFLR/realtime/blk_mem_gameover_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gameover' (23#1) [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.runs/synth_1/.Xil/Vivado-4816-DESKTOP-I7MQFLR/realtime/blk_mem_gameover_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_firework' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.runs/synth_1/.Xil/Vivado-4816-DESKTOP-I7MQFLR/realtime/blk_mem_firework_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_firework' (24#1) [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.runs/synth_1/.Xil/Vivado-4816-DESKTOP-I7MQFLR/realtime/blk_mem_firework_stub.v:6]
+WARNING: [Synth 8-689] width (17) of port connection 'addra' does not match port width (16) of module 'blk_mem_firework' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/Car.v:91]
+INFO: [Synth 8-6157] synthesizing module 'rom_car' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/rom_car.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'rom_car' (25#1) [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/rom_car.v:23]
+INFO: [Synth 8-6157] synthesizing module 'rom_oppcar' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/rom_oppcar.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'rom_oppcar' (26#1) [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/rom_oppcar.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Landscape' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/Racing_Boy.v:23]
+INFO: [Synth 8-6157] synthesizing module 'straight_road' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/straight_road.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'straight_road' (27#1) [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/straight_road.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Road_marking' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/Road_marking.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Road_marking' (28#1) [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/Road_marking.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Normal_Tree' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/Normal_Tree.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Normal_Tree' (29#1) [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/Normal_Tree.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Pine_tree' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/Pine_tree.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Pine_tree' (30#1) [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/Pine_tree.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Landscape' (31#1) [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/Racing_Boy.v:23]
+WARNING: [Synth 8-689] width (7) of port connection 'y' does not match port width (6) of module 'Landscape' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/Car.v:110]
+INFO: [Synth 8-6157] synthesizing module 'Random' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/Random.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'Random' (32#1) [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/Random.v:22]
+INFO: [Synth 8-6157] synthesizing module 'Ready_state' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/Ready_state.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Word_Ready' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/Word_Ready.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Word_Ready' (33#1) [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/Word_Ready.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Word_Start' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/Word_Start.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Word_Start' (34#1) [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/Word_Start.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Number_1' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/Number_1.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Number_1' (35#1) [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/Number_1.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Number_2' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/Number_2.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Number_2' (36#1) [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/Number_2.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Number_3' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/Number_3.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Number_3' (37#1) [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/Number_3.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Ready_state' (38#1) [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/Ready_state.v:23]
+WARNING: [Synth 8-689] width (7) of port connection 'y' does not match port width (6) of module 'Ready_state' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/Car.v:203]
+INFO: [Synth 8-6157] synthesizing module 'Finishing_Line' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/Finishing_Line.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Finishing_Line' (39#1) [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/Finishing_Line.v:23]
+WARNING: [Synth 8-689] width (7) of port connection 'y' does not match port width (6) of module 'Finishing_Line' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/Car.v:204]
+INFO: [Synth 8-6157] synthesizing module 'Self_driving' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/Self_driving.v:23]
+WARNING: [Synth 8-689] width (7) of port connection 'y' does not match port width (6) of module 'Landscape' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/Self_driving.v:41]
+INFO: [Synth 8-6155] done synthesizing module 'Self_driving' (40#1) [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/Self_driving.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Car_game' (41#1) [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/Car.v:22]
+WARNING: [Synth 8-689] width (6) of port connection 'y' does not match port width (7) of module 'Car_game' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:109]
+INFO: [Synth 8-6157] synthesizing module 'frequency_generator__parameterized6' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/frequency_generator.v:23]
+	Parameter N bound to: 26 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'frequency_generator__parameterized6' (41#1) [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/frequency_generator.v:23]
+INFO: [Synth 8-6157] synthesizing module 'segment_999' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:501]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:507]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:513]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:519]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:525]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:531]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:537]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:543]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:549]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:555]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:561]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:567]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:573]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:579]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:585]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:591]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:597]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:603]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:609]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:615]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:621]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:627]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:633]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:639]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:645]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:651]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:657]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:663]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:669]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:675]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:681]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:687]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:693]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:699]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:705]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:711]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:717]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:723]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:729]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:735]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:741]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:747]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:753]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:759]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:765]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:771]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:777]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:783]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:789]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:795]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:801]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:807]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:813]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:819]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:825]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:831]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:837]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:843]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:849]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:855]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:861]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:867]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:873]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:879]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:885]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:891]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:897]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:903]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:909]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:915]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:921]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:927]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:933]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:939]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:945]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:951]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:957]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:963]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:969]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:975]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:981]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:987]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:993]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:999]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:1005]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:1011]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:1017]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:1023]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:1029]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:1035]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:1041]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:1047]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:1053]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:1059]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:1065]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:1071]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:1077]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:1083]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:1089]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:1095]
+INFO: [Common 17-14] Message 'Synth 8-155' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'segment_999' (42#1) [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/segment_999.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Top_Student' (43#1) [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:18]
+WARNING: [Synth 8-3331] design Pine_tree has unconnected port sw[15]
+WARNING: [Synth 8-3331] design Pine_tree has unconnected port sw[14]
+WARNING: [Synth 8-3331] design Pine_tree has unconnected port sw[13]
+WARNING: [Synth 8-3331] design Pine_tree has unconnected port sw[12]
+WARNING: [Synth 8-3331] design Pine_tree has unconnected port sw[11]
+WARNING: [Synth 8-3331] design Pine_tree has unconnected port sw[10]
+WARNING: [Synth 8-3331] design Pine_tree has unconnected port sw[9]
+WARNING: [Synth 8-3331] design Pine_tree has unconnected port sw[8]
+WARNING: [Synth 8-3331] design Pine_tree has unconnected port sw[7]
+WARNING: [Synth 8-3331] design Pine_tree has unconnected port sw[6]
+WARNING: [Synth 8-3331] design Pine_tree has unconnected port sw[5]
+WARNING: [Synth 8-3331] design Pine_tree has unconnected port sw[4]
+WARNING: [Synth 8-3331] design Pine_tree has unconnected port sw[3]
+WARNING: [Synth 8-3331] design Pine_tree has unconnected port sw[2]
+WARNING: [Synth 8-3331] design Pine_tree has unconnected port sw[1]
+WARNING: [Synth 8-3331] design Pine_tree has unconnected port sw[0]
+WARNING: [Synth 8-3331] design Normal_Tree has unconnected port sw[15]
+WARNING: [Synth 8-3331] design Normal_Tree has unconnected port sw[14]
+WARNING: [Synth 8-3331] design Normal_Tree has unconnected port sw[13]
+WARNING: [Synth 8-3331] design Normal_Tree has unconnected port sw[12]
+WARNING: [Synth 8-3331] design Normal_Tree has unconnected port sw[11]
+WARNING: [Synth 8-3331] design Normal_Tree has unconnected port sw[10]
+WARNING: [Synth 8-3331] design Normal_Tree has unconnected port sw[9]
+WARNING: [Synth 8-3331] design Normal_Tree has unconnected port sw[8]
+WARNING: [Synth 8-3331] design Normal_Tree has unconnected port sw[7]
+WARNING: [Synth 8-3331] design Normal_Tree has unconnected port sw[6]
+WARNING: [Synth 8-3331] design Normal_Tree has unconnected port sw[5]
+WARNING: [Synth 8-3331] design Normal_Tree has unconnected port sw[4]
+WARNING: [Synth 8-3331] design Normal_Tree has unconnected port sw[3]
+WARNING: [Synth 8-3331] design Normal_Tree has unconnected port sw[2]
+WARNING: [Synth 8-3331] design Normal_Tree has unconnected port sw[1]
+WARNING: [Synth 8-3331] design Normal_Tree has unconnected port sw[0]
+WARNING: [Synth 8-3331] design Road_marking has unconnected port clk
+WARNING: [Synth 8-3331] design Road_marking has unconnected port sw[15]
+WARNING: [Synth 8-3331] design Road_marking has unconnected port sw[14]
+WARNING: [Synth 8-3331] design Road_marking has unconnected port sw[13]
+WARNING: [Synth 8-3331] design Road_marking has unconnected port sw[12]
+WARNING: [Synth 8-3331] design Road_marking has unconnected port sw[11]
+WARNING: [Synth 8-3331] design Road_marking has unconnected port sw[10]
+WARNING: [Synth 8-3331] design Road_marking has unconnected port sw[9]
+WARNING: [Synth 8-3331] design Road_marking has unconnected port sw[8]
+WARNING: [Synth 8-3331] design Road_marking has unconnected port sw[7]
+WARNING: [Synth 8-3331] design Road_marking has unconnected port sw[6]
+WARNING: [Synth 8-3331] design Road_marking has unconnected port sw[5]
+WARNING: [Synth 8-3331] design Road_marking has unconnected port sw[4]
+WARNING: [Synth 8-3331] design Road_marking has unconnected port sw[3]
+WARNING: [Synth 8-3331] design Road_marking has unconnected port sw[2]
+WARNING: [Synth 8-3331] design Road_marking has unconnected port sw[1]
+WARNING: [Synth 8-3331] design Road_marking has unconnected port sw[0]
+WARNING: [Synth 8-3331] design straight_road has unconnected port sw[15]
+WARNING: [Synth 8-3331] design straight_road has unconnected port sw[14]
+WARNING: [Synth 8-3331] design straight_road has unconnected port sw[13]
+WARNING: [Synth 8-3331] design straight_road has unconnected port sw[12]
+WARNING: [Synth 8-3331] design straight_road has unconnected port sw[11]
+WARNING: [Synth 8-3331] design straight_road has unconnected port sw[10]
+WARNING: [Synth 8-3331] design straight_road has unconnected port sw[9]
+WARNING: [Synth 8-3331] design straight_road has unconnected port sw[8]
+WARNING: [Synth 8-3331] design straight_road has unconnected port sw[7]
+WARNING: [Synth 8-3331] design straight_road has unconnected port sw[6]
+WARNING: [Synth 8-3331] design straight_road has unconnected port sw[5]
+WARNING: [Synth 8-3331] design straight_road has unconnected port sw[4]
+WARNING: [Synth 8-3331] design straight_road has unconnected port sw[3]
+WARNING: [Synth 8-3331] design straight_road has unconnected port sw[2]
+WARNING: [Synth 8-3331] design straight_road has unconnected port sw[1]
+WARNING: [Synth 8-3331] design straight_road has unconnected port sw[0]
+WARNING: [Synth 8-3331] design Finishing_Line has unconnected port sw[15]
+WARNING: [Synth 8-3331] design Finishing_Line has unconnected port sw[14]
+WARNING: [Synth 8-3331] design Finishing_Line has unconnected port sw[13]
+WARNING: [Synth 8-3331] design Finishing_Line has unconnected port sw[12]
+WARNING: [Synth 8-3331] design Finishing_Line has unconnected port sw[11]
+WARNING: [Synth 8-3331] design Finishing_Line has unconnected port sw[10]
+WARNING: [Synth 8-3331] design Finishing_Line has unconnected port sw[9]
+WARNING: [Synth 8-3331] design Finishing_Line has unconnected port sw[8]
+WARNING: [Synth 8-3331] design Finishing_Line has unconnected port sw[7]
+WARNING: [Synth 8-3331] design Finishing_Line has unconnected port sw[6]
+WARNING: [Synth 8-3331] design Finishing_Line has unconnected port sw[5]
+WARNING: [Synth 8-3331] design Finishing_Line has unconnected port sw[4]
+WARNING: [Synth 8-3331] design Finishing_Line has unconnected port sw[3]
+WARNING: [Synth 8-3331] design Finishing_Line has unconnected port sw[2]
+WARNING: [Synth 8-3331] design Finishing_Line has unconnected port sw[1]
+WARNING: [Synth 8-3331] design Finishing_Line has unconnected port sw[0]
+WARNING: [Synth 8-3331] design Number_3 has unconnected port sw[15]
+WARNING: [Synth 8-3331] design Number_3 has unconnected port sw[14]
+WARNING: [Synth 8-3331] design Number_3 has unconnected port sw[13]
+WARNING: [Synth 8-3331] design Number_3 has unconnected port sw[12]
+WARNING: [Synth 8-3331] design Number_3 has unconnected port sw[11]
+WARNING: [Synth 8-3331] design Number_3 has unconnected port sw[10]
+WARNING: [Synth 8-3331] design Number_3 has unconnected port sw[9]
+WARNING: [Synth 8-3331] design Number_3 has unconnected port sw[8]
+WARNING: [Synth 8-3331] design Number_3 has unconnected port sw[7]
+WARNING: [Synth 8-3331] design Number_3 has unconnected port sw[6]
+WARNING: [Synth 8-3331] design Number_3 has unconnected port sw[5]
+WARNING: [Synth 8-3331] design Number_3 has unconnected port sw[4]
+WARNING: [Synth 8-3331] design Number_3 has unconnected port sw[3]
+WARNING: [Synth 8-3331] design Number_3 has unconnected port sw[2]
+WARNING: [Synth 8-3331] design Number_3 has unconnected port sw[1]
+WARNING: [Synth 8-3331] design Number_3 has unconnected port sw[0]
+WARNING: [Synth 8-3331] design Number_2 has unconnected port sw[15]
+WARNING: [Synth 8-3331] design Number_2 has unconnected port sw[14]
+WARNING: [Synth 8-3331] design Number_2 has unconnected port sw[13]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 614.598 ; gain = 328.309
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 614.598 ; gain = 328.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 614.598 ; gain = 328.309
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/ip/blk_mem_choosetrack2/blk_mem_choosetrack2/blk_mem_choosetrack3_in_context.xdc] for cell 'How_to_play/Ctrack2'
+Finished Parsing XDC File [d:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/ip/blk_mem_choosetrack2/blk_mem_choosetrack2/blk_mem_choosetrack3_in_context.xdc] for cell 'How_to_play/Ctrack2'
+Parsing XDC File [d:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/ip/blk_mem_title/blk_mem_title/blk_mem_title_in_context.xdc] for cell 'How_to_play/title'
+Finished Parsing XDC File [d:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/ip/blk_mem_title/blk_mem_title/blk_mem_title_in_context.xdc] for cell 'How_to_play/title'
+Parsing XDC File [d:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/ip/blk_mem_firework/blk_mem_firework/blk_mem_firework_in_context.xdc] for cell 'How_to_play/firework'
+Finished Parsing XDC File [d:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/ip/blk_mem_firework/blk_mem_firework/blk_mem_firework_in_context.xdc] for cell 'How_to_play/firework'
+Parsing XDC File [d:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/ip/blk_mem_choosecar1/blk_mem_choosecar1/blk_mem_choosecar1_in_context.xdc] for cell 'How_to_play/Ccar1'
+Finished Parsing XDC File [d:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/ip/blk_mem_choosecar1/blk_mem_choosecar1/blk_mem_choosecar1_in_context.xdc] for cell 'How_to_play/Ccar1'
+Parsing XDC File [d:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/ip/blk_mem_choosecar2/blk_mem_choosecar2/blk_mem_choosecar2_in_context.xdc] for cell 'How_to_play/Ccar2'
+Finished Parsing XDC File [d:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/ip/blk_mem_choosecar2/blk_mem_choosecar2/blk_mem_choosecar2_in_context.xdc] for cell 'How_to_play/Ccar2'
+Parsing XDC File [d:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/ip/blk_mem_choosecar3/blk_mem_choosecar3/blk_mem_choosecar3_in_context.xdc] for cell 'How_to_play/Ccar3'
+Finished Parsing XDC File [d:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/ip/blk_mem_choosecar3/blk_mem_choosecar3/blk_mem_choosecar3_in_context.xdc] for cell 'How_to_play/Ccar3'
+Parsing XDC File [d:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/ip/blk_mem_choosetrack1/blk_mem_choosetrack1/blk_mem_choosetrack1_in_context.xdc] for cell 'How_to_play/Ctrack1'
+Finished Parsing XDC File [d:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/ip/blk_mem_choosetrack1/blk_mem_choosetrack1/blk_mem_choosetrack1_in_context.xdc] for cell 'How_to_play/Ctrack1'
+Parsing XDC File [d:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/ip/blk_mem_gameover/blk_mem_gameover/blk_mem_gameover_in_context.xdc] for cell 'How_to_play/gg1'
+Finished Parsing XDC File [d:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/ip/blk_mem_gameover/blk_mem_gameover/blk_mem_gameover_in_context.xdc] for cell 'How_to_play/gg1'
+Parsing XDC File [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/constrs_1/new/Basys3_Master.xdc]
+Finished Parsing XDC File [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/constrs_1/new/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/constrs_1/new/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_Student_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Top_Student_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 1211.484 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'How_to_play/Ccar1' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'How_to_play/Ccar2' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'How_to_play/Ccar3' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'How_to_play/Ctrack1' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'How_to_play/Ctrack2' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'How_to_play/firework' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'How_to_play/gg1' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'How_to_play/title' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:03 ; elapsed = 00:01:05 . Memory (MB): peak = 1213.500 ; gain = 927.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:03 ; elapsed = 00:01:05 . Memory (MB): peak = 1213.500 ; gain = 927.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for How_to_play/Ctrack2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for How_to_play/title. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for How_to_play/firework. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for How_to_play/Ccar1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for How_to_play/Ccar2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for How_to_play/Ccar3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for How_to_play/Ctrack1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for How_to_play/gg1. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:03 ; elapsed = 00:01:05 . Memory (MB): peak = 1213.500 ; gain = 927.211
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Oled_Display'
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "fsm_next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "max" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "max" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "multi_volume" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "continuous_volume" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pix_data_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pix_data_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "pixel_data0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "pixel_data0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "finish_enable" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "scoring_points" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "finish_pos" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_ready" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "choose_counter_car" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "scoring_points" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "finish_pos" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_ready" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "choose_counter_car" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "opp_car_enable" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 PowerUp | 00000000100000000000000000000000 |                            00000
+                   Reset | 00000000000100000000000000000000 |                            00001
+            ReleaseReset | 00000000000000000000100000000000 |                            00011
+            EnableDriver | 00000000000000000001000000000000 |                            00010
+              DisplayOff | 00000000000000000100000000000000 |                            00110
+   SetRemapDisplayFormat | 00000100000000000000000000000000 |                            00111
+            SetStartLine | 00001000000000000000000000000000 |                            00101
+               SetOffset | 10000000000000000000000000000000 |                            00100
+        SetNormalDisplay | 00000000000000000000000010000000 |                            01100
+       SetMultiplexRatio | 00000000000000000000000000100000 |                            01101
+  SetMasterConfiguration | 00000000000000000000000001000000 |                            01111
+        DisablePowerSave | 00000000000000000000000000000100 |                            01110
+          SetPhaseAdjust | 00000000000000000000000000001000 |                            01010
+         SetDisplayClock | 00000000001000000000000000000000 |                            01011
+     SetSecondPrechargeA | 00000000010000000000000000000000 |                            01001
+     SetSecondPrechargeB | 01000000000000000000000000000000 |                            01000
+     SetSecondPrechargeC | 00000010000000000000000000000000 |                            11000
+       SetPrechargeLevel | 00000001000000000000000000000000 |                            11001
+                SetVCOMH | 00000000000000010000000000000000 |                            11011
+        SetMasterCurrent | 00000000000000100000000000000000 |                            11010
+            SetContrastA | 00000000000001000000000000000000 |                            11110
+            SetContrastB | 00100000000000000000000000000000 |                            11111
+            SetContrastC | 00000000000000000000000000000001 |                            11101
+        DisableScrolling | 00000000000000000000000000000010 |                            11100
+             ClearScreen | 00000000000000000000000000010000 |                            10100
+                   VccEn | 00010000000000000000000000000000 |                            10101
+               DisplayOn | 00000000000010000000000000000000 |                            10111
+        PrepareNextFrame | 00000000000000001000000000000000 |                            10110
+           SetColAddress | 00000000000000000000010000000000 |                            10010
+           SetRowAddress | 00000000000000000000000100000000 |                            10011
+           WaitNextFrame | 00000000000000000000001000000000 |                            10001
+               SendPixel | 00000000000000000010000000000000 |                            10000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'Oled_Display'
+WARNING: [Synth 8-327] inferring latch for variable 'pixel_data_reg' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/straight_road.v:36]
+WARNING: [Synth 8-327] inferring latch for variable 'pixel_data_reg' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/Road_marking.v:55]
+WARNING: [Synth 8-327] inferring latch for variable 'pixel_data_reg' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/Normal_Tree.v:63]
+WARNING: [Synth 8-327] inferring latch for variable 'pixel_data_reg' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/Pine_tree.v:39]
+WARNING: [Synth 8-327] inferring latch for variable 'pixel_data_reg' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/Word_Ready.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'pixel_data_reg' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/Word_Start.v:85]
+WARNING: [Synth 8-327] inferring latch for variable 'pixel_data_reg' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/Number_1.v:45]
+WARNING: [Synth 8-327] inferring latch for variable 'pixel_data_reg' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/Number_2.v:48]
+WARNING: [Synth 8-327] inferring latch for variable 'pixel_data_reg' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/Number_3.v:48]
+WARNING: [Synth 8-327] inferring latch for variable 'pixel_data_reg' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/Ready_state.v:47]
+WARNING: [Synth 8-327] inferring latch for variable 'state_enable_reg' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/Ready_state.v:48]
+WARNING: [Synth 8-327] inferring latch for variable 'pixel_data_reg' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/Finishing_Line.v:37]
+WARNING: [Synth 8-327] inferring latch for variable 'pixel_data_out_reg' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/Self_driving.v:82]
+WARNING: [Synth 8-327] inferring latch for variable 'pixel_data_out_reg' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/Car.v:252]
+WARNING: [Synth 8-327] inferring latch for variable 'pixel_index_calculation_reg' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/Car.v:77]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:34 ; elapsed = 00:01:36 . Memory (MB): peak = 2074.328 ; gain = 1788.039
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'Clk_btn' (frequency_generator__parameterized0) to 'Clk48hz'
+
+Report RTL Partitions: 
++------+---------------------------------+------------+----------+
+|      |RTL Partition                    |Replication |Instances |
++------+---------------------------------+------------+----------+
+|1     |muxpart__21                      |           1|     33485|
+|2     |continuous_volume_depiction__GB1 |           1|      3122|
+|3     |Continuous_full_bar__GB0         |           1|     36070|
+|4     |Continuous_full_bar__GB1         |           1|      9171|
+|5     |Continuous_full_bar__GB2         |           1|     25475|
+|6     |Continuous_full_bar__GB3         |           1|     22463|
+|7     |Landscape                        |           2|     16041|
+|8     |Self_driving__GC0                |           1|      1875|
+|9     |Car_game__GC0                    |           1|     15458|
+|10    |Mode_multi_bar                   |           1|     34822|
+|11    |Top_Student__GCB1                |           1|      6317|
+|12    |Top_Student__GCB2                |           1|      1180|
+|13    |Top_Student__GCB3                |           1|      9567|
+|14    |Top_Student__GCB4                |           1|     30967|
+|15    |Top_Student__GCB5                |           1|      7091|
++------+---------------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 66    
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 2     
+	   2 Input     15 Bit       Adders := 3     
+	   2 Input     14 Bit       Adders := 2     
+	   2 Input     13 Bit       Adders := 3     
+	   3 Input      8 Bit       Adders := 127   
+	   2 Input      8 Bit       Adders := 191   
+	   2 Input      7 Bit       Adders := 478   
+	   3 Input      7 Bit       Adders := 12    
+	   2 Input      6 Bit       Adders := 174   
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 3     
+	   2 Input      2 Bit       Adders := 7     
+	   2 Input      1 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	              360 Bit    Registers := 2     
+	               64 Bit    Registers := 2     
+	               40 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	               13 Bit    Registers := 3     
+	               12 Bit    Registers := 5     
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 14    
+	                6 Bit    Registers := 16    
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 7     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 25    
++---Muxes : 
+	   2 Input    360 Bit        Muxes := 2     
+	   2 Input     64 Bit        Muxes := 2     
+	   2 Input     40 Bit        Muxes := 3     
+	  32 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	  32 Input     20 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 2042  
+	   3 Input     16 Bit        Muxes := 250   
+	   4 Input     16 Bit        Muxes := 1850  
+	  10 Input     16 Bit        Muxes := 2     
+	 169 Input     16 Bit        Muxes := 2     
+	 197 Input     16 Bit        Muxes := 3     
+	   3 Input     15 Bit        Muxes := 2     
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 4     
+	   2 Input     12 Bit        Muxes := 7     
+	   2 Input      8 Bit        Muxes := 66    
+	   4 Input      8 Bit        Muxes := 1833  
+	   2 Input      7 Bit        Muxes := 1     
+	   3 Input      6 Bit        Muxes := 1     
+	  32 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	  32 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 5     
+	  16 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 15    
+	   7 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 11    
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 54    
+	   3 Input      1 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 1     
+	  15 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+	  16 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+	2028 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Top_Student 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module slow_clock__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module VolumeBar__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module FloatBar__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module VolumeBar__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module FloatBar__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module VolumeBar__3 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module FloatBar__3 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module VolumeBar__4 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module FloatBar__4 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module VolumeBar__5 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module FloatBar__5 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module VolumeBar__6 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module FloatBar__6 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module VolumeBar__7 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module FloatBar__7 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module VolumeBar__8 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module FloatBar__8 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module VolumeBar__9 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module FloatBar__9 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module VolumeBar__10 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module FloatBar__10 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module VolumeBar__11 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module FloatBar__11 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module VolumeBar__12 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module FloatBar__12 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module VolumeBar__13 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module FloatBar__13 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module VolumeBar__14 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module FloatBar__14 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module VolumeBar__15 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module FloatBar__15 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module VolumeBar 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module FloatBar 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module Mode_multi_bar 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 31    
+Module continuous_volume_depiction 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     13 Bit       Adders := 1     
++---Registers : 
+	              360 Bit    Registers := 2     
+	               13 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
++---Muxes : 
+	   2 Input    360 Bit        Muxes := 2     
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 1     
+Module UpDownBarIndividual__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__3 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__4 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__5 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__6 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__7 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__8 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__9 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__10 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__11 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__12 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__13 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__14 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__15 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__16 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__17 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__18 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__19 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__20 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__21 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__22 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__23 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__24 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__25 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__26 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__27 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__28 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__29 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__30 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__31 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__32 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__33 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__34 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__35 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__36 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__37 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__38 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__39 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__40 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__41 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__42 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__43 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__44 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__45 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__46 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__47 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__48 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__49 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__50 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__51 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__52 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__53 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__54 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__55 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__56 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__57 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__58 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__59 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__60 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__61 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__62 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__63 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__64 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__65 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__66 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__67 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__68 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__69 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__70 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__71 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__72 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__73 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__74 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__75 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__76 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__77 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__78 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__79 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__80 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__81 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__82 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__83 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__84 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__85 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__86 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__87 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__88 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual__89 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module UpDownBarIndividual 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 15    
+Module Continuous_full_bar 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 1     
+Module straight_road 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 1     
+	   3 Input     15 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module Road_marking 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      7 Bit       Adders := 4     
+	   2 Input      6 Bit       Adders := 7     
++---Muxes : 
+	  10 Input     16 Bit        Muxes := 1     
+Module Normal_Tree__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input      8 Bit       Adders := 4     
+	   2 Input      6 Bit       Adders := 18    
+Module Normal_Tree__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input      8 Bit       Adders := 4     
+	   2 Input      6 Bit       Adders := 18    
+Module Pine_tree__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   2 Input      8 Bit       Adders := 4     
+	   2 Input      7 Bit       Adders := 9     
+Module Pine_tree__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   2 Input      8 Bit       Adders := 4     
+	   2 Input      7 Bit       Adders := 9     
+Module Normal_Tree__3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input      8 Bit       Adders := 4     
+	   2 Input      6 Bit       Adders := 18    
+Module Normal_Tree 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input      8 Bit       Adders := 4     
+	   2 Input      6 Bit       Adders := 18    
+Module Pine_tree__3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   2 Input      8 Bit       Adders := 4     
+	   2 Input      7 Bit       Adders := 9     
+Module Pine_tree 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   2 Input      8 Bit       Adders := 4     
+	   2 Input      7 Bit       Adders := 9     
+Module Landscape 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 108   
+	   2 Input      6 Bit       Adders := 7     
++---Registers : 
+	                6 Bit    Registers := 7     
+Module rom_car__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 2     
++---Muxes : 
+	 169 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+Module Self_driving 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   3 Input      7 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 5     
+	   3 Input      6 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+Module rom_car 
+Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 2     
++---Muxes : 
+	 169 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+Module rom_oppcar__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 2     
++---Muxes : 
+	 197 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+Module rom_oppcar__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 2     
++---Muxes : 
+	 197 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+Module rom_oppcar 
+Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 2     
++---Muxes : 
+	 197 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+Module Random 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+Module slow_clock__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module Word_Ready 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 41    
+	   2 Input      7 Bit       Adders := 9     
+Module Word_Start 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 43    
+	   2 Input      7 Bit       Adders := 9     
+Module Number_1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 8     
+	   2 Input      7 Bit       Adders := 6     
+Module Number_2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 11    
+	   2 Input      7 Bit       Adders := 14    
+Module Number_3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 11    
+	   2 Input      7 Bit       Adders := 14    
+Module Ready_state 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 4     
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   6 Input      1 Bit        Muxes := 1     
+Module Finishing_Line 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 6     
+	   2 Input      7 Bit       Adders := 7     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module Car_game 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input     15 Bit       Adders := 3     
+	   2 Input     14 Bit       Adders := 1     
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 12    
+	   3 Input      8 Bit       Adders := 4     
+	   3 Input      7 Bit       Adders := 3     
+	   2 Input      7 Bit       Adders := 8     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 5     
++---Registers : 
+	               13 Bit    Registers := 1     
+	                7 Bit    Registers := 3     
+	                6 Bit    Registers := 1     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 17    
+	   2 Input     13 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 14    
+	   2 Input      2 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 9     
+	   3 Input      1 Bit        Muxes := 1     
+	  15 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+Module slow_clock__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module Audio_Capture 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
+Module multiple_bar_volume_depiction 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     13 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 2     
+	               13 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 2     
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 1     
+Module TaskB 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 18    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 16    
+Module volume_7_seg 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	  16 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	  16 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slow_clock__5 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff__5 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff__4 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module slow_clock__4 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff__6 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module slow_clock__6 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module peak_volume 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 1     
++---Registers : 
+	               14 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 17    
+Module Oled_Display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 3     
+	  32 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	  32 Input     20 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	  32 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	  32 Input      5 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module segment_999 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 2     
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 63    
+	   4 Input      8 Bit        Muxes := 1833  
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+	2028 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slow_clock__7 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff__7 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff__8 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module slow_clock__8 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff__9 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module slow_clock 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "continuous_volume" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element Self_driven/yindex_reg was removed.  [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/rom_car.v:31]
+WARNING: [Synth 8-6014] Unused sequential element  was removed. 
+INFO: [Synth 8-5546] ROM "multi_volume" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3886] merging instance 'Self_driven_Cari_10/car_tlX_reg[0]' (FDE) to 'Self_driven_Cari_10/car_tlX_reg[5]'
+INFO: [Synth 8-3886] merging instance 'Self_driven_Cari_10/car_tlX_reg[1]' (FDE) to 'Self_driven_Cari_10/car_tlX_reg[5]'
+INFO: [Synth 8-3886] merging instance 'Self_driven_Cari_10/car_tlX_reg[2]' (FDE) to 'Self_driven_Cari_10/car_tlX_reg[6]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (Self_driven_Cari_10/\car_tlX_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Self_driven_Cari_10/\car_tlX_reg[6] )
+INFO: [Synth 8-3886] merging instance 'i_1/seven_segment/seg_reg[7]' (FD) to 'i_1/seven_segment/an_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_1/seven_segment/an_reg[2]' (FD) to 'i_1/seven_segment/an_reg[3]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_1/\seven_segment/an_reg[3] )
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5545] ROM "pixel_data0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-3886] merging instance 'Marking/pixel_data_reg[0]' (LD) to 'Marking/pixel_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Pine_tree4/pixel_data_reg[0]' (LDP) to 'Pine_tree4/pixel_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Pine_tree3/pixel_data_reg[0]' (LDP) to 'Pine_tree3/pixel_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Norm_Tree4/pixel_data_reg[0]' (LDP) to 'Norm_Tree4/pixel_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Norm_Tree3/pixel_data_reg[0]' (LDP) to 'Norm_Tree3/pixel_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Pine_tree2/pixel_data_reg[0]' (LDP) to 'Pine_tree2/pixel_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Pine_tree1/pixel_data_reg[0]' (LDP) to 'Pine_tree1/pixel_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Norm_Tree2/pixel_data_reg[0]' (LDP) to 'Norm_Tree2/pixel_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Norm_Tree1/pixel_data_reg[0]' (LDP) to 'Norm_Tree1/pixel_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Marking/pixel_data_reg[1]' (LD) to 'Marking/pixel_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Pine_tree4/pixel_data_reg[1]' (LDP) to 'Pine_tree4/pixel_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Pine_tree3/pixel_data_reg[1]' (LDP) to 'Pine_tree3/pixel_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Norm_Tree4/pixel_data_reg[1]' (LDP) to 'Norm_Tree4/pixel_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Norm_Tree3/pixel_data_reg[1]' (LDP) to 'Norm_Tree3/pixel_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Pine_tree2/pixel_data_reg[1]' (LDP) to 'Pine_tree2/pixel_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Pine_tree1/pixel_data_reg[1]' (LDP) to 'Pine_tree1/pixel_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Norm_Tree2/pixel_data_reg[1]' (LDP) to 'Norm_Tree2/pixel_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Norm_Tree1/pixel_data_reg[1]' (LDP) to 'Norm_Tree1/pixel_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Moving_Road/pixel_data_reg[2]' (LDC) to 'Moving_Road/pixel_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'Marking/pixel_data_reg[2]' (LD) to 'Marking/pixel_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Pine_tree4/pixel_data_reg[2]' (LDC) to 'Pine_tree4/pixel_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'Pine_tree3/pixel_data_reg[2]' (LDC) to 'Pine_tree3/pixel_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'Norm_Tree4/pixel_data_reg[2]' (LDC) to 'Norm_Tree4/pixel_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'Norm_Tree3/pixel_data_reg[2]' (LDC) to 'Norm_Tree3/pixel_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'Pine_tree2/pixel_data_reg[2]' (LDC) to 'Pine_tree2/pixel_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'Pine_tree1/pixel_data_reg[2]' (LDC) to 'Pine_tree1/pixel_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'Norm_Tree2/pixel_data_reg[2]' (LDC) to 'Norm_Tree2/pixel_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'Norm_Tree1/pixel_data_reg[2]' (LDC) to 'Norm_Tree1/pixel_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'Moving_Road/pixel_data_reg[3]' (LDC) to 'Moving_Road/pixel_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'Marking/pixel_data_reg[3]' (LD) to 'Marking/pixel_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'Pine_tree4/pixel_data_reg[3]' (LDC) to 'Pine_tree4/pixel_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'Pine_tree3/pixel_data_reg[3]' (LDC) to 'Pine_tree3/pixel_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'Norm_Tree4/pixel_data_reg[3]' (LDC) to 'Norm_Tree4/pixel_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'Norm_Tree3/pixel_data_reg[3]' (LDC) to 'Norm_Tree3/pixel_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'Pine_tree2/pixel_data_reg[3]' (LDC) to 'Pine_tree2/pixel_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'Pine_tree1/pixel_data_reg[3]' (LDC) to 'Pine_tree1/pixel_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'Norm_Tree2/pixel_data_reg[3]' (LDC) to 'Norm_Tree2/pixel_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'Norm_Tree1/pixel_data_reg[3]' (LDC) to 'Norm_Tree1/pixel_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'Marking/pixel_data_reg[4]' (LD) to 'Marking/pixel_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Pine_tree4/pixel_data_reg[4]' (LDC) to 'Pine_tree4/pixel_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'Pine_tree3/pixel_data_reg[4]' (LDC) to 'Pine_tree3/pixel_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'Norm_Tree4/pixel_data_reg[4]' (LDC) to 'Norm_Tree4/pixel_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'Norm_Tree3/pixel_data_reg[4]' (LDC) to 'Norm_Tree3/pixel_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'Pine_tree2/pixel_data_reg[4]' (LDC) to 'Pine_tree2/pixel_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'Pine_tree1/pixel_data_reg[4]' (LDC) to 'Pine_tree1/pixel_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'Norm_Tree2/pixel_data_reg[4]' (LDC) to 'Norm_Tree2/pixel_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'Norm_Tree1/pixel_data_reg[4]' (LDC) to 'Norm_Tree1/pixel_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'Moving_Road/pixel_data_reg[5]' (LDP) to 'Moving_Road/pixel_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'Marking/pixel_data_reg[5]' (LD) to 'Marking/pixel_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Pine_tree4/pixel_data_reg[5]' (LDP) to 'Pine_tree4/pixel_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Pine_tree3/pixel_data_reg[5]' (LDP) to 'Pine_tree3/pixel_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Norm_Tree4/pixel_data_reg[5]' (LDP) to 'Norm_Tree4/pixel_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Norm_Tree3/pixel_data_reg[5]' (LDP) to 'Norm_Tree3/pixel_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Pine_tree2/pixel_data_reg[5]' (LDP) to 'Pine_tree2/pixel_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Pine_tree1/pixel_data_reg[5]' (LDP) to 'Pine_tree1/pixel_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Norm_Tree2/pixel_data_reg[5]' (LDP) to 'Norm_Tree2/pixel_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Norm_Tree1/pixel_data_reg[5]' (LDP) to 'Norm_Tree1/pixel_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Marking/pixel_data_reg[6]' (LD) to 'Marking/pixel_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Pine_tree4/pixel_data_reg[6]' (LDC) to 'Pine_tree4/pixel_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'Pine_tree3/pixel_data_reg[6]' (LDC) to 'Pine_tree3/pixel_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'Norm_Tree4/pixel_data_reg[6]' (LDC) to 'Norm_Tree4/pixel_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'Norm_Tree3/pixel_data_reg[6]' (LDC) to 'Norm_Tree3/pixel_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'Pine_tree2/pixel_data_reg[6]' (LDC) to 'Pine_tree2/pixel_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'Pine_tree1/pixel_data_reg[6]' (LDC) to 'Pine_tree1/pixel_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'Norm_Tree2/pixel_data_reg[6]' (LDC) to 'Norm_Tree2/pixel_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'Norm_Tree1/pixel_data_reg[6]' (LDC) to 'Norm_Tree1/pixel_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'Marking/pixel_data_reg[7]' (LD) to 'Marking/pixel_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Pine_tree4/pixel_data_reg[7]' (LDC) to 'Pine_tree4/pixel_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Pine_tree3/pixel_data_reg[7]' (LDC) to 'Pine_tree3/pixel_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Norm_Tree4/pixel_data_reg[7]' (LDC) to 'Norm_Tree4/pixel_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Norm_Tree3/pixel_data_reg[7]' (LDC) to 'Norm_Tree3/pixel_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Pine_tree2/pixel_data_reg[7]' (LDC) to 'Pine_tree2/pixel_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Pine_tree1/pixel_data_reg[7]' (LDC) to 'Pine_tree1/pixel_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Norm_Tree2/pixel_data_reg[7]' (LDC) to 'Norm_Tree2/pixel_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Norm_Tree1/pixel_data_reg[7]' (LDC) to 'Norm_Tree1/pixel_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Marking/pixel_data_reg[8]' (LD) to 'Marking/pixel_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'Pine_tree4/pixel_data_reg[8]' (LDP) to 'Pine_tree4/pixel_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Pine_tree3/pixel_data_reg[8]' (LDP) to 'Pine_tree3/pixel_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Norm_Tree4/pixel_data_reg[8]' (LDP) to 'Norm_Tree4/pixel_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Norm_Tree3/pixel_data_reg[8]' (LDP) to 'Norm_Tree3/pixel_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Pine_tree2/pixel_data_reg[8]' (LDP) to 'Pine_tree2/pixel_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Pine_tree1/pixel_data_reg[8]' (LDP) to 'Pine_tree1/pixel_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Norm_Tree2/pixel_data_reg[8]' (LDP) to 'Norm_Tree2/pixel_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Norm_Tree1/pixel_data_reg[8]' (LDP) to 'Norm_Tree1/pixel_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Marking/pixel_data_reg[9]' (LD) to 'Marking/pixel_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Pine_tree4/pixel_data_reg[9]' (LDP) to 'Pine_tree4/pixel_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'Pine_tree3/pixel_data_reg[9]' (LDP) to 'Pine_tree3/pixel_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'Norm_Tree4/pixel_data_reg[9]' (LDP) to 'Norm_Tree4/pixel_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'Norm_Tree3/pixel_data_reg[9]' (LDP) to 'Norm_Tree3/pixel_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'Pine_tree2/pixel_data_reg[9]' (LDP) to 'Pine_tree2/pixel_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'Pine_tree1/pixel_data_reg[9]' (LDP) to 'Pine_tree1/pixel_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'Norm_Tree2/pixel_data_reg[9]' (LDP) to 'Norm_Tree2/pixel_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'Norm_Tree1/pixel_data_reg[9]' (LDP) to 'Norm_Tree1/pixel_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'Marking/pixel_data_reg[10]' (LD) to 'Marking/pixel_data_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Pine_tree4/\pixel_data_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Pine_tree3/\pixel_data_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Norm_Tree4/\pixel_data_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Norm_Tree3/\pixel_data_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Pine_tree2/\pixel_data_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Pine_tree1/\pixel_data_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Norm_Tree2/\pixel_data_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Norm_Tree1/\pixel_data_reg[10] )
+INFO: [Synth 8-3886] merging instance 'Marking/pixel_data_reg[11]' (LD) to 'Marking/pixel_data_reg[15]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (Pine_tree4/\pixel_data_reg[12] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (Pine_tree3/\pixel_data_reg[12] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (Norm_Tree4/\pixel_data_reg[12] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (Norm_Tree3/\pixel_data_reg[12] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (Pine_tree2/\pixel_data_reg[12] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (Pine_tree1/\pixel_data_reg[12] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (Norm_Tree2/\pixel_data_reg[12] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (Norm_Tree1/\pixel_data_reg[12] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (Moving_Road/\pixel_data_reg[15] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (Marking/\pixel_data_reg[15] )
+WARNING: [Synth 8-3332] Sequential element (pixel_data_reg[15]) is unused and will be removed from module straight_road.
+WARNING: [Synth 8-3332] Sequential element (pixel_data_reg[15]) is unused and will be removed from module Road_marking.
+WARNING: [Synth 8-3332] Sequential element (pixel_data_reg[12]) is unused and will be removed from module Normal_Tree__1.
+WARNING: [Synth 8-3332] Sequential element (pixel_data_reg[10]) is unused and will be removed from module Normal_Tree__1.
+WARNING: [Synth 8-3332] Sequential element (pixel_data_reg[12]) is unused and will be removed from module Normal_Tree__2.
+WARNING: [Synth 8-3332] Sequential element (pixel_data_reg[10]) is unused and will be removed from module Normal_Tree__2.
+WARNING: [Synth 8-3332] Sequential element (pixel_data_reg[12]) is unused and will be removed from module Pine_tree__1.
+WARNING: [Synth 8-3332] Sequential element (pixel_data_reg[10]) is unused and will be removed from module Pine_tree__1.
+WARNING: [Synth 8-3332] Sequential element (pixel_data_reg[12]) is unused and will be removed from module Pine_tree__2.
+WARNING: [Synth 8-3332] Sequential element (pixel_data_reg[10]) is unused and will be removed from module Pine_tree__2.
+WARNING: [Synth 8-3332] Sequential element (pixel_data_reg[12]) is unused and will be removed from module Normal_Tree__3.
+WARNING: [Synth 8-3332] Sequential element (pixel_data_reg[10]) is unused and will be removed from module Normal_Tree__3.
+WARNING: [Synth 8-3332] Sequential element (pixel_data_reg[12]) is unused and will be removed from module Normal_Tree.
+WARNING: [Synth 8-3332] Sequential element (pixel_data_reg[10]) is unused and will be removed from module Normal_Tree.
+WARNING: [Synth 8-3332] Sequential element (pixel_data_reg[12]) is unused and will be removed from module Pine_tree__3.
+WARNING: [Synth 8-3332] Sequential element (pixel_data_reg[10]) is unused and will be removed from module Pine_tree__3.
+WARNING: [Synth 8-3332] Sequential element (pixel_data_reg[12]) is unused and will be removed from module Pine_tree.
+WARNING: [Synth 8-3332] Sequential element (pixel_data_reg[10]) is unused and will be removed from module Pine_tree.
+INFO: [Synth 8-4471] merging register 'oppcar1_0/yindex_reg[6:0]' into 'oppcar0_0/yindex_reg[6:0]' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/rom_oppcar.v:31]
+INFO: [Synth 8-4471] merging register 'oppcar2_0/yindex_reg[6:0]' into 'oppcar0_0/yindex_reg[6:0]' [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/rom_oppcar.v:31]
+WARNING: [Synth 8-6014] Unused sequential element oppcar1_0/yindex_reg was removed.  [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/rom_oppcar.v:31]
+WARNING: [Synth 8-6014] Unused sequential element oppcar2_0/yindex_reg was removed.  [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/rom_oppcar.v:31]
+WARNING: [Synth 8-6014] Unused sequential element car/yindex_reg was removed.  [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/rom_car.v:31]
+WARNING: [Synth 8-6014] Unused sequential element oppcar0_0/yindex_reg was removed.  [D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/rom_oppcar.v:31]
+WARNING: [Synth 8-6014] Unused sequential element  was removed. 
+WARNING: [Synth 8-6014] Unused sequential element  was removed. 
+WARNING: [Synth 8-6014] Unused sequential element  was removed. 
+WARNING: [Synth 8-6014] Unused sequential element  was removed. 
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Ready_Set_Go/Start/\pixel_data_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Ready_Set_Go/Three/\pixel_data_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Ready_Set_Go/Two/\pixel_data_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Ready_Set_Go/Ready/\pixel_data_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Ready_Set_Go/One/\pixel_data_reg[15] )
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Ready_Set_Go/\pixel_data_reg[15] )
+WARNING: [Synth 8-3332] Sequential element (pixel_data_reg[15]) is unused and will be removed from module Word_Ready.
+WARNING: [Synth 8-3332] Sequential element (pixel_data_reg[15]) is unused and will be removed from module Word_Start.
+WARNING: [Synth 8-3332] Sequential element (pixel_data_reg[15]) is unused and will be removed from module Number_1.
+WARNING: [Synth 8-3332] Sequential element (pixel_data_reg[15]) is unused and will be removed from module Number_2.
+WARNING: [Synth 8-3332] Sequential element (pixel_data_reg[15]) is unused and will be removed from module Number_3.
+WARNING: [Synth 8-3332] Sequential element (pixel_data_reg[15]) is unused and will be removed from module Ready_state.
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3332] Sequential element (SLOWC_reg) is unused and will be removed from module slow_clock__2.
+INFO: [Synth 8-5546] ROM "max" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "p_2_out0" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Common 17-14] Message 'Synth 8-5544' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-5544' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (Score/\seg_reg[7] )
+WARNING: [Synth 8-3332] Sequential element (seg_reg[7]) is unused and will be removed from module segment_999.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:03:29 ; elapsed = 00:03:49 . Memory (MB): peak = 2174.566 ; gain = 1888.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+--------------------------+---------------+----------------+
+|Module Name | RTL Object               | Depth x Width | Implemented As | 
++------------+--------------------------+---------------+----------------+
+|Top_Student | Self_driven/pix_data_out | 2048x16       | Block RAM      | 
++------------+--------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance Self_driven_Cari_10/i_0/i_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance How_to_playi_11/i_7/i_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance How_to_playi_11/i_8/i_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance How_to_playi_11/i_9/i_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance How_to_playi_11/i_10/i_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++------+---------------------------------+------------+----------+
+|      |RTL Partition                    |Replication |Instances |
++------+---------------------------------+------------+----------+
+|1     |muxpart__21                      |           1|     33485|
+|2     |continuous_volume_depiction__GB1 |           1|      2533|
+|3     |Continuous_full_bar__GB0         |           1|     14082|
+|4     |Continuous_full_bar__GB1         |           1|      3365|
+|5     |Continuous_full_bar__GB2         |           1|      9339|
+|6     |Continuous_full_bar__GB3         |           1|      8246|
+|7     |Landscape                        |           2|      4783|
+|8     |Self_driving__GC0                |           1|       313|
+|9     |Car_game__GC0                    |           1|      2400|
+|10    |Mode_multi_bar                   |           1|     10773|
+|11    |Top_Student__GCB1                |           1|      1819|
+|12    |Top_Student__GCB2                |           1|       536|
+|13    |Top_Student__GCB3                |           1|       156|
+|14    |Top_Student__GCB4                |           1|      3597|
+|15    |Top_Student__GCB5                |           1|       336|
++------+---------------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:43 ; elapsed = 00:04:05 . Memory (MB): peak = 2290.539 ; gain = 2004.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:03:51 ; elapsed = 00:04:13 . Memory (MB): peak = 2344.000 ; gain = 2057.711
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+---------------------------------+------------+----------+
+|      |RTL Partition                    |Replication |Instances |
++------+---------------------------------+------------+----------+
+|1     |muxpart__21                      |           1|      2669|
+|2     |continuous_volume_depiction__GB1 |           1|      2533|
+|3     |Continuous_full_bar__GB0         |           1|     13878|
+|4     |Continuous_full_bar__GB1         |           1|      3365|
+|5     |Continuous_full_bar__GB2         |           1|      9339|
+|6     |Continuous_full_bar__GB3         |           1|      8243|
+|7     |Landscape                        |           2|      4783|
+|8     |Self_driving__GC0                |           1|       313|
+|9     |Car_game__GC0                    |           1|      2378|
+|10    |Mode_multi_bar                   |           1|     10773|
+|11    |Top_Student__GCB1                |           1|      1819|
+|12    |Top_Student__GCB2                |           1|       536|
+|13    |Top_Student__GCB3                |           1|       156|
+|14    |Top_Student__GCB4                |           1|      3588|
+|15    |Top_Student__GCB5                |           1|       336|
++------+---------------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance Self_driven_Cari_10/i_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance How_to_playi_11/i_112 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance How_to_playi_11/i_112 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance How_to_playi_11/i_113 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance How_to_playi_11/i_114 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:04:06 ; elapsed = 00:04:36 . Memory (MB): peak = 2502.832 ; gain = 2216.543
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+---------------------------------+------------+----------+
+|      |RTL Partition                    |Replication |Instances |
++------+---------------------------------+------------+----------+
+|1     |muxpart__21                      |           1|       720|
+|2     |continuous_volume_depiction__GB1 |           1|      1661|
+|3     |Continuous_full_bar__GB0         |           1|      4346|
+|4     |Continuous_full_bar__GB1         |           1|       979|
+|5     |Continuous_full_bar__GB2         |           1|      2654|
+|6     |Continuous_full_bar__GB3         |           1|      2351|
+|7     |Landscape                        |           1|      1617|
+|8     |Self_driving__GC0                |           1|       216|
+|9     |Car_game__GC0                    |           1|      1138|
+|10    |Mode_multi_bar                   |           1|      4136|
+|11    |Top_Student__GCB1                |           1|       875|
+|12    |Top_Student__GCB2                |           1|       211|
+|13    |Top_Student__GCB3                |           1|       101|
+|14    |Top_Student__GCB4                |           1|      1652|
+|15    |Top_Student__GCB5                |           1|       276|
+|16    |Landscape__1                     |           1|      1617|
++------+---------------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance Self_driven_Cari_16755 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance How_to_playi_17026 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance How_to_playi_17026 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance How_to_playi_17027 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance How_to_playi_17028 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:04:13 ; elapsed = 00:04:44 . Memory (MB): peak = 2502.832 ; gain = 2216.543
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:04:13 ; elapsed = 00:04:44 . Memory (MB): peak = 2502.832 ; gain = 2216.543
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:16 ; elapsed = 00:04:47 . Memory (MB): peak = 2502.832 ; gain = 2216.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:04:17 ; elapsed = 00:04:48 . Memory (MB): peak = 2502.832 ; gain = 2216.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:04:23 ; elapsed = 00:04:54 . Memory (MB): peak = 2502.832 ; gain = 2216.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:04:23 ; elapsed = 00:04:54 . Memory (MB): peak = 2502.832 ; gain = 2216.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------------+----------+
+|      |BlackBox name        |Instances |
++------+---------------------+----------+
+|1     |blk_mem_title        |         1|
+|2     |blk_mem_choosecar1   |         1|
+|3     |blk_mem_choosecar2   |         1|
+|4     |blk_mem_choosecar3   |         1|
+|5     |blk_mem_choosetrack1 |         1|
+|6     |blk_mem_choosetrack2 |         1|
+|7     |blk_mem_gameover     |         1|
+|8     |blk_mem_firework     |         1|
++------+---------------------+----------+
+
+Report Cell Usage: 
++------+---------------------+------+
+|      |Cell                 |Count |
++------+---------------------+------+
+|1     |blk_mem_choosecar1   |     1|
+|2     |blk_mem_choosecar2   |     1|
+|3     |blk_mem_choosecar3   |     1|
+|4     |blk_mem_choosetrack1 |     1|
+|5     |blk_mem_choosetrack2 |     1|
+|6     |blk_mem_firework     |     1|
+|7     |blk_mem_gameover     |     1|
+|8     |blk_mem_title        |     1|
+|9     |BUFG                 |     5|
+|10    |CARRY4               |   882|
+|11    |LUT1                 |   736|
+|12    |LUT2                 |  2311|
+|13    |LUT3                 |  2255|
+|14    |LUT4                 |  2008|
+|15    |LUT5                 |  3155|
+|16    |LUT6                 | 11383|
+|17    |MUXF7                |   330|
+|18    |MUXF8                |    42|
+|19    |RAMB36E1             |     2|
+|20    |RAMB36E1_1           |     2|
+|21    |FDRE                 |  1680|
+|22    |FDRE_1               |    31|
+|23    |FDSE_1               |     1|
+|24    |LD                   |    35|
+|25    |LDC                  |    35|
+|26    |LDCP                 |     6|
+|27    |LDP                  |    21|
+|28    |IBUF                 |    19|
+|29    |OBUF                 |    37|
++------+---------------------+------+
+
+Report Instance Areas: 
++------+---------------------+---------------------------------------+------+
+|      |Instance             |Module                                 |Cells |
++------+---------------------+---------------------------------------+------+
+|1     |top                  |                                       | 25104|
+|2     |  Clk12hz            |frequency_generator__parameterized3    |    30|
+|3     |  Clk3hz             |frequency_generator__parameterized1    |    33|
+|4     |  Clk96hz            |frequency_generator__parameterized5    |    25|
+|5     |  Clk_btn            |frequency_generator__parameterized0    |    28|
+|6     |  Winnning_Flash     |frequency_generator__parameterized6    |    34|
+|7     |  clk381             |frequency_generator                    |    24|
+|8     |  AC1                |Audio_Capture                          |   203|
+|9     |  How_to_play        |Car_game                               |  4588|
+|10    |    Finish           |Finishing_Line                         |   158|
+|11    |    Game             |Landscape                              |  1506|
+|12    |      Marking        |Road_marking_28                        |    22|
+|13    |      Moving_Road    |straight_road                          |    42|
+|14    |      Norm_Tree1     |Normal_Tree_29                         |    59|
+|15    |      Norm_Tree2     |Normal_Tree_30                         |    62|
+|16    |      Norm_Tree3     |Normal_Tree_31                         |    87|
+|17    |      Norm_Tree4     |Normal_Tree_32                         |    52|
+|18    |      Pine_tree1     |Pine_tree_33                           |    81|
+|19    |      Pine_tree2     |Pine_tree_34                           |    81|
+|20    |      Pine_tree3     |Pine_tree_35                           |    70|
+|21    |      Pine_tree4     |Pine_tree_36                           |    72|
+|22    |    Random_Car       |Random                                 |     7|
+|23    |    Ready_Set_Go     |Ready_state                            |    26|
+|24    |    Self_driven_Car  |Self_driving                           |  1341|
+|25    |      Self_Landscape |Landscape_20                           |  1210|
+|26    |        Marking      |Road_marking                           |    19|
+|27    |        Norm_Tree1   |Normal_Tree                            |    57|
+|28    |        Norm_Tree2   |Normal_Tree_22                         |    60|
+|29    |        Norm_Tree3   |Normal_Tree_23                         |    64|
+|30    |        Norm_Tree4   |Normal_Tree_24                         |    50|
+|31    |        Pine_tree1   |Pine_tree                              |    81|
+|32    |        Pine_tree2   |Pine_tree_25                           |    81|
+|33    |        Pine_tree3   |Pine_tree_26                           |    70|
+|34    |        Pine_tree4   |Pine_tree_27                           |    71|
+|35    |      Self_driven    |rom_car_21                             |    22|
+|36    |    car              |rom_car                                |    29|
+|37    |    clk12hz          |frequency_generator__parameterized3_15 |    30|
+|38    |    clk1hz           |slow_clock_16                          |    50|
+|39    |    clk24hz          |frequency_generator__parameterized4    |    29|
+|40    |    clk48hz          |frequency_generator__parameterized0_17 |    28|
+|41    |    clk6hz           |frequency_generator__parameterized2    |    31|
+|42    |    oppcar0_0        |rom_oppcar                             |    51|
+|43    |    oppcar1_0        |rom_oppcar_18                          |    19|
+|44    |    oppcar2_0        |rom_oppcar_19                          |     5|
+|45    |  OLED1              |Oled_Display                           | 13608|
+|46    |  Score              |segment_999                            |    64|
+|47    |  ninety_bar         |continuous_volume_depiction            |  4128|
+|48    |  nolabel_line33     |single_pulse_circuit                   |    54|
+|49    |    dff1             |my_dff_12                              |     4|
+|50    |    dff2             |my_dff_13                              |     1|
+|51    |    nolabel_line44   |slow_clock_14                          |    49|
+|52    |  nolabel_line45     |single_pulse_circuit_0                 |    52|
+|53    |    dff1             |my_dff_9                               |     2|
+|54    |    dff2             |my_dff_10                              |     1|
+|55    |    nolabel_line44   |slow_clock_11                          |    49|
+|56    |  nolabel_line47     |single_pulse_circuit_1                 |    52|
+|57    |    dff1             |my_dff_6                               |     2|
+|58    |    dff2             |my_dff_7                               |     1|
+|59    |    nolabel_line44   |slow_clock_8                           |    49|
+|60    |  nolabel_line48     |single_pulse_circuit_2                 |    52|
+|61    |    dff1             |my_dff                                 |     2|
+|62    |    dff2             |my_dff_4                               |     1|
+|63    |    nolabel_line44   |slow_clock_5                           |    49|
+|64    |  sc1                |slow_clock                             |    50|
+|65    |  sc20k              |slow_clock_3                           |    50|
+|66    |  seven_segment      |volume_7_seg                           |    10|
+|67    |  sixteen_bar        |multiple_bar_volume_depiction          |  1315|
+|68    |  volume1            |peak_volume                            |   141|
++------+---------------------+---------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:04:23 ; elapsed = 00:04:54 . Memory (MB): peak = 2502.832 ; gain = 2216.543
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 251 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:03:26 ; elapsed = 00:04:24 . Memory (MB): peak = 2502.832 ; gain = 1617.641
+Synthesis Optimization Complete : Time (s): cpu = 00:04:24 ; elapsed = 00:04:55 . Memory (MB): peak = 2502.832 ; gain = 2216.543
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1406 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 129 instances were transformed.
+  FDRE_1 => FDRE (inverted pins: C): 31 instances
+  FDSE_1 => FDSE (inverted pins: C): 1 instances
+  LD => LDCE: 35 instances
+  LDC => LDCE: 35 instances
+  LDCP => LDCP (GND, LUT3, LUT3, LDCE, VCC): 6 instances
+  LDP => LDPE: 21 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+489 Infos, 173 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:04:33 ; elapsed = 00:05:06 . Memory (MB): peak = 2502.832 ; gain = 2228.012
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'D:/Vivado/Project/Final/SoundDisplay/SoundDisplay.runs/synth_1/Top_Student.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 2502.832 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file Top_Student_utilization_synth.rpt -pb Top_Student_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.207 . Memory (MB): peak = 2502.832 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Apr  4 23:26:02 2020...

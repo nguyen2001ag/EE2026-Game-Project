@@ -1,0 +1,157 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sat Apr  4 23:28:29 2020
+| Host         : DESKTOP-I7MQFLR running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Top_Student_control_sets_placed.rpt
+| Design       : Top_Student
+| Device       : xc7a35t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    88 |
+| Unused register locations in slices containing registers |   234 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            9 |
+|      4 |           23 |
+|      6 |            2 |
+|      8 |           17 |
+|     12 |            5 |
+|    16+ |           32 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |            1016 |          242 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             776 |          122 |
+| Yes          | No                    | No                     |            1598 |          576 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             304 |           47 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------------------------------------------+----------------------------------------+--------------------------------------------------------------------------------------+------------------+----------------+
+|                            Clock Signal                            |              Enable Signal             |                                   Set/Reset Signal                                   | Slice Load Count | Bel Load Count |
++--------------------------------------------------------------------+----------------------------------------+--------------------------------------------------------------------------------------+------------------+----------------+
+|  How_to_play/Game/Moving_Road/pixel_data_reg[6]/G0                 |                                        |                                                                                      |                1 |              2 |
+|  How_to_play/Game/Moving_Road/pixel_data_reg[0]/G0                 |                                        |                                                                                      |                1 |              2 |
+|  How_to_play/Game/Moving_Road/pixel_data_reg[4]/G0                 |                                        |                                                                                      |                1 |              2 |
+|  How_to_play/Game/Moving_Road/pixel_data_reg[1]/G0                 |                                        |                                                                                      |                1 |              2 |
+|  OLED1/spi_word_reg[39]_97                                         |                                        |                                                                                      |                1 |              2 |
+|  How_to_play/Game/Moving_Road/pixel_data_reg[13]/G0                |                                        |                                                                                      |                1 |              2 |
+|  clk_peak_volume_BUFG                                              |                                        |                                                                                      |                1 |              2 |
+|  How_to_play/Game/Moving_Road/pixel_data_reg[14]/G0                |                                        |                                                                                      |                1 |              2 |
+| ~clk6p25m_BUFG                                                     |                                        |                                                                                      |                1 |              2 |
+|                                                                    |                                        | How_to_play/Ready_Set_Go/state_enable_reg[1]_i_2_n_0                                 |                1 |              4 |
+|  How_to_play/Game/Pine_tree2/pixel_data0                           |                                        | OLED1/spi_word_reg[24]_69[0]                                                         |                1 |              4 |
+|  How_to_play/Game/Pine_tree3/pixel_data0                           |                                        | How_to_play/Game/Pine_tree3/pixel_data_reg[15]_i_2__5_n_0                            |                1 |              4 |
+|  How_to_play/Game/Marking/pixel_data0__0                           |                                        |                                                                                      |                2 |              4 |
+|  How_to_play/Game/Pine_tree4/pixel_data0                           |                                        | How_to_play/Game/Pine_tree4/pixel_data_reg[15]_i_2__6_n_0                            |                1 |              4 |
+|  nolabel_line45/nolabel_line44/SLOWC                               |                                        |                                                                                      |                1 |              4 |
+|  How_to_play/Game/Pine_tree1/pixel_data0                           |                                        | OLED1/AR[0]                                                                          |                1 |              4 |
+|  OLED1/spi_word_reg[24]_47[0]                                      |                                        | How_to_play/Game/Norm_Tree2/pixel_data0                                              |                1 |              4 |
+|  How_to_play/Self_driven_Car/Self_Landscape/Pine_tree1/pixel_data0 |                                        | OLED1/spi_word_reg[31]_163[0]                                                        |                1 |              4 |
+|  How_to_play/Self_driven_Car/Self_Landscape/Pine_tree2/pixel_data0 |                                        | OLED1/spi_word_reg[31]_174[0]                                                        |                1 |              4 |
+|  How_to_play/Self_driven_Car/Self_Landscape/Pine_tree3/pixel_data0 |                                        | How_to_play/Self_driven_Car/Self_Landscape/Pine_tree3/pixel_data_reg[15]_i_2__13_n_0 |                1 |              4 |
+|  How_to_play/Self_driven_Car/Self_Landscape/Pine_tree4/pixel_data0 |                                        | How_to_play/Self_driven_Car/Self_Landscape/Pine_tree4/pixel_data_reg[15]_i_2__14_n_0 |                1 |              4 |
+|  OLED1/spi_word_reg[24]_34[0]                                      |                                        | How_to_play/Game/Norm_Tree1/pixel_data0                                              |                1 |              4 |
+|  OLED1/spi_word_reg[31]_158[0]                                     |                                        | How_to_play/Self_driven_Car/Self_Landscape/Norm_Tree2/pixel_data0                    |                1 |              4 |
+|  OLED1/spi_word_reg[31]_154[0]                                     |                                        | How_to_play/Self_driven_Car/Self_Landscape/Norm_Tree1/pixel_data0                    |                1 |              4 |
+|  OLED1/spi_word_reg[39]_64[0]                                      |                                        | OLED1/spi_word_reg[37]_21[0]                                                         |                1 |              4 |
+|  nolabel_line48/nolabel_line44/SLOWC                               |                                        |                                                                                      |                1 |              4 |
+|  OLED1/spi_word_reg[37]_6[0]                                       |                                        | OLED1/AS[0]                                                                          |                1 |              4 |
+|  OLED1/spi_word_reg[37]_11[0]                                      |                                        | OLED1/spi_word_reg[39]_34[0]                                                         |                1 |              4 |
+|  OLED1/spi_word_reg[39]_60[0]                                      |                                        | OLED1/spi_word_reg[37]_17[0]                                                         |                1 |              4 |
+|  nolabel_line47/nolabel_line44/SLOWC                               |                                        |                                                                                      |                1 |              4 |
+|  Clk3hz/clk3Hz                                                     |                                        |                                                                                      |                1 |              4 |
+|  nolabel_line33/nolabel_line44/SLOWC                               |                                        |                                                                                      |                1 |              4 |
+|  How_to_play/clk_ready                                             |                                        |                                                                                      |                1 |              6 |
+|  volume1/CLK                                                       |                                        |                                                                                      |                2 |              6 |
+|  How_to_play/clk48hz/j_reg[3][0]                                   | How_to_play/Self_driven_Car/j0         |                                                                                      |                1 |              8 |
+|  J_MIC3_Pin1_OBUF_BUFG                                             | sixteen_bar/volume[59]_i_2_n_0         | sixteen_bar/volume[59]_i_1_n_0                                                       |                1 |              8 |
+|  J_MIC3_Pin1_OBUF_BUFG                                             | sixteen_bar/volume[55]_i_2_n_0         | sixteen_bar/volume[55]_i_1_n_0                                                       |                1 |              8 |
+|  J_MIC3_Pin1_OBUF_BUFG                                             | sixteen_bar/volume[7]_i_2_n_0          | sixteen_bar/volume[7]_i_1_n_0                                                        |                1 |              8 |
+|  J_MIC3_Pin1_OBUF_BUFG                                             | sixteen_bar/volume[43]_i_2_n_0         | sixteen_bar/volume[43]_i_1_n_0                                                       |                1 |              8 |
+|  J_MIC3_Pin1_OBUF_BUFG                                             | sixteen_bar/volume[3]_i_2_n_0          | sixteen_bar/volume[3]_i_1_n_0                                                        |                1 |              8 |
+|  J_MIC3_Pin1_OBUF_BUFG                                             | sixteen_bar/volume[47]_i_2_n_0         | sixteen_bar/volume[47]_i_1_n_0                                                       |                1 |              8 |
+|  J_MIC3_Pin1_OBUF_BUFG                                             | sixteen_bar/volume[51]_i_2_n_0         | sixteen_bar/volume[51]_i_1_n_0                                                       |                1 |              8 |
+|  J_MIC3_Pin1_OBUF_BUFG                                             | sixteen_bar/volume[39]_i_2_n_0         | sixteen_bar/volume[39]_i_1_n_0                                                       |                1 |              8 |
+|  J_MIC3_Pin1_OBUF_BUFG                                             | sixteen_bar/volume[15]_i_2_n_0         | sixteen_bar/volume[15]_i_1_n_0                                                       |                1 |              8 |
+|  clk_peak_volume_BUFG                                              | volume1/count[13]_i_1_n_0              |                                                                                      |                3 |              8 |
+|  J_MIC3_Pin1_OBUF_BUFG                                             | sixteen_bar/volume[35]_i_2_n_0         | sixteen_bar/volume[35]_i_1_n_0                                                       |                1 |              8 |
+|  J_MIC3_Pin1_OBUF_BUFG                                             | sixteen_bar/volume[11]_i_2_n_0         | sixteen_bar/volume[11]_i_1_n_0                                                       |                1 |              8 |
+|  J_MIC3_Pin1_OBUF_BUFG                                             | sixteen_bar/volume[27]_i_2_n_0         | sixteen_bar/volume[27]_i_1_n_0                                                       |                1 |              8 |
+|  J_MIC3_Pin1_OBUF_BUFG                                             | sixteen_bar/volume[23]_i_2_n_0         | sixteen_bar/volume[23]_i_1_n_0                                                       |                1 |              8 |
+|  J_MIC3_Pin1_OBUF_BUFG                                             | sixteen_bar/volume[31]_i_2_n_0         | sixteen_bar/volume[31]_i_1_n_0                                                       |                1 |              8 |
+|  J_MIC3_Pin1_OBUF_BUFG                                             | sixteen_bar/volume[19]_i_2_n_0         | sixteen_bar/volume[19]_i_1_n_0                                                       |                2 |              8 |
+|  moving_clock_0                                                    | How_to_play/finish_pos[5]_i_2_n_0      | How_to_play/finish_pos[5]_i_1_n_0                                                    |                3 |             12 |
+|  OLED1/spi_word_reg[34]_20                                         |                                        | How_to_play/Game/Moving_Road/pixel_data_reg[7]_i_1_n_0                               |                2 |             12 |
+|  Clk96hz/clk96Hz                                                   |                                        |                                                                                      |                3 |             12 |
+|  Clk_btn/Car_btn_clock                                             |                                        |                                                                                      |                2 |             12 |
+|  moving_clock_0                                                    |                                        | How_to_play/gg                                                                       |                2 |             12 |
+|  How_to_play/clk48hz/j_reg[3][0]                                   |                                        |                                                                                      |                4 |             20 |
+|  clk381Hz_BUFG                                                     | How_to_play/E[0]                       |                                                                                      |                7 |             22 |
+| ~AC1/J_MIC3_Pin4_OBUF                                              |                                        |                                                                                      |                7 |             24 |
+|  clk_peak_volume_BUFG                                              | volume1/max_reg[11]_0[0]               | volume1/count[13]_i_1_n_0                                                            |                5 |             24 |
+|  J_MIC3_Pin1_OBUF_BUFG                                             |                                        |                                                                                      |                5 |             24 |
+|  J_MIC3_Pin1_OBUF_BUFG                                             |                                        | ninety_bar/max_volume_reg[11]_i_1_n_3                                                |                8 |             24 |
+|  J_MIC3_Pin1_OBUF_BUFG                                             |                                        | sixteen_bar/max_volume0_carry__0_n_3                                                 |                5 |             24 |
+|  CLK100MHZ_IBUF_BUFG                                               |                                        | J_MIC3_Pin1_OBUF_BUFG                                                                |                3 |             24 |
+|  J_MIC3_Pin1_OBUF_BUFG                                             |                                        | ninety_bar/count[12]_i_1_n_0                                                         |                4 |             26 |
+|  clk_peak_volume_BUFG                                              |                                        | volume1/count[13]_i_1_n_0                                                            |                4 |             26 |
+|  J_MIC3_Pin1_OBUF_BUFG                                             |                                        | sixteen_bar/count[12]_i_1__0_n_0                                                     |                4 |             26 |
+|  How_to_play/pixel_index_calculation_reg[15]_i_2_n_0               |                                        |                                                                                      |                6 |             32 |
+|  OLED1/spi_word_reg[39]_95[0]                                      |                                        |                                                                                      |                8 |             32 |
+|  How_to_play/Ready_Set_Go/E[0]                                     |                                        | OLED1/spi_word_reg[24]_108[0]                                                        |                4 |             32 |
+| ~clk6p25m_BUFG                                                     |                                        | nolabel_line33/dff1/reset                                                            |                8 |             34 |
+| ~clk6p25m_BUFG                                                     | OLED1/delay[0]_i_1_n_0                 | nolabel_line33/dff1/reset                                                            |                5 |             40 |
+|  clk381Hz_BUFG                                                     |                                        |                                                                                      |               13 |             40 |
+|  moving_clock_0                                                    | How_to_play/scoring_points[12]_i_2_n_0 | How_to_play/scoring_points[12]_i_1_n_0                                               |                9 |             44 |
+|  CLK100MHZ_IBUF_BUFG                                               |                                        | How_to_play/clk1hz/clear                                                             |                7 |             54 |
+|  CLK100MHZ_IBUF_BUFG                                               |                                        | nolabel_line33/nolabel_line44/clear                                                  |                7 |             54 |
+|  CLK100MHZ_IBUF_BUFG                                               |                                        | nolabel_line47/nolabel_line44/clear                                                  |                7 |             54 |
+|  CLK100MHZ_IBUF_BUFG                                               |                                        | sc20k/clear                                                                          |                7 |             54 |
+|  CLK100MHZ_IBUF_BUFG                                               |                                        | sc1/clear                                                                            |                7 |             54 |
+|  CLK100MHZ_IBUF_BUFG                                               |                                        | nolabel_line48/nolabel_line44/clear                                                  |                7 |             54 |
+|  CLK100MHZ_IBUF_BUFG                                               |                                        | nolabel_line45/nolabel_line44/clear                                                  |                7 |             54 |
+| ~clk6p25m_BUFG                                                     | OLED1/FSM_onehot_state[31]_i_2_n_0     | nolabel_line33/dff1/reset                                                            |                9 |             64 |
+| ~clk6p25m_BUFG                                                     |                                        | OLED1/spi_word[39]_i_1_n_0                                                           |               12 |             90 |
+|  J_MIC3_Pin1_OBUF_BUFG                                             | sixteen_bar/count[12]_i_1__0_n_0       |                                                                                      |               30 |            120 |
+|  moving_clock_0                                                    |                                        |                                                                                      |               73 |            194 |
+|  CLK100MHZ_IBUF_BUFG                                               |                                        |                                                                                      |              102 |            572 |
+|  J_MIC3_Pin1_OBUF_BUFG                                             | ninety_bar/max_volume_reg[11]_i_1_n_3  |                                                                                      |              254 |            720 |
+|  J_MIC3_Pin1_OBUF_BUFG                                             | ninety_bar/count[12]_i_1_n_0           |                                                                                      |              281 |            720 |
++--------------------------------------------------------------------+----------------------------------------+--------------------------------------------------------------------------------------+------------------+----------------+
+
+

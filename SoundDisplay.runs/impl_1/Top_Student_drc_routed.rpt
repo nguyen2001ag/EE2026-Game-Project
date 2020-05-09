@@ -1,0 +1,195 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sat Apr  4 23:29:50 2020
+| Host         : DESKTOP-I7MQFLR running 64-bit major release  (build 9200)
+| Command      : report_drc -file Top_Student_drc_routed.rpt -pb Top_Student_drc_routed.pb -rpx Top_Student_drc_routed.rpx
+| Design       : Top_Student
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 30
++----------+----------+-----------------------------------------------------+------------+
+| Rule     | Severity | Description                                         | Violations |
++----------+----------+-----------------------------------------------------+------------+
+| CFGBVS-1 | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
+| PDRC-153 | Warning  | Gated clock check                                   | 29         |
++----------+----------+-----------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+CFGBVS-1#1 Warning
+Missing CFGBVS and CONFIG_VOLTAGE Design Properties  
+Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+Related violations: <none>
+
+PDRC-153#1 Warning
+Gated clock check  
+Net How_to_play/Game/Marking/pixel_data0__0 is a gated clock net sourced by a combinational pin How_to_play/Game/Marking/pixel_data0/i_/O, cell How_to_play/Game/Marking/pixel_data0/i_. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net How_to_play/Game/Moving_Road/pixel_data_reg[0]/G0 is a gated clock net sourced by a combinational pin How_to_play/Game/Moving_Road/pixel_data_reg[0]/L3_2/O, cell How_to_play/Game/Moving_Road/pixel_data_reg[0]/L3_2 (in How_to_play/Game/Moving_Road/pixel_data_reg[0] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#3 Warning
+Gated clock check  
+Net How_to_play/Game/Moving_Road/pixel_data_reg[13]/G0 is a gated clock net sourced by a combinational pin How_to_play/Game/Moving_Road/pixel_data_reg[13]/L3_2/O, cell How_to_play/Game/Moving_Road/pixel_data_reg[13]/L3_2 (in How_to_play/Game/Moving_Road/pixel_data_reg[13] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#4 Warning
+Gated clock check  
+Net How_to_play/Game/Moving_Road/pixel_data_reg[14]/G0 is a gated clock net sourced by a combinational pin How_to_play/Game/Moving_Road/pixel_data_reg[14]/L3_2/O, cell How_to_play/Game/Moving_Road/pixel_data_reg[14]/L3_2 (in How_to_play/Game/Moving_Road/pixel_data_reg[14] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#5 Warning
+Gated clock check  
+Net How_to_play/Game/Moving_Road/pixel_data_reg[1]/G0 is a gated clock net sourced by a combinational pin How_to_play/Game/Moving_Road/pixel_data_reg[1]/L3_2/O, cell How_to_play/Game/Moving_Road/pixel_data_reg[1]/L3_2 (in How_to_play/Game/Moving_Road/pixel_data_reg[1] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#6 Warning
+Gated clock check  
+Net How_to_play/Game/Moving_Road/pixel_data_reg[4]/G0 is a gated clock net sourced by a combinational pin How_to_play/Game/Moving_Road/pixel_data_reg[4]/L3_2/O, cell How_to_play/Game/Moving_Road/pixel_data_reg[4]/L3_2 (in How_to_play/Game/Moving_Road/pixel_data_reg[4] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#7 Warning
+Gated clock check  
+Net How_to_play/Game/Moving_Road/pixel_data_reg[6]/G0 is a gated clock net sourced by a combinational pin How_to_play/Game/Moving_Road/pixel_data_reg[6]/L3_2/O, cell How_to_play/Game/Moving_Road/pixel_data_reg[6]/L3_2 (in How_to_play/Game/Moving_Road/pixel_data_reg[6] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#8 Warning
+Gated clock check  
+Net How_to_play/Game/Pine_tree1/pixel_data0 is a gated clock net sourced by a combinational pin How_to_play/Game/Pine_tree1/pixel_data_reg[15]_i_1__1/O, cell How_to_play/Game/Pine_tree1/pixel_data_reg[15]_i_1__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#9 Warning
+Gated clock check  
+Net How_to_play/Game/Pine_tree2/pixel_data0 is a gated clock net sourced by a combinational pin How_to_play/Game/Pine_tree2/pixel_data_reg[15]_i_1__2/O, cell How_to_play/Game/Pine_tree2/pixel_data_reg[15]_i_1__2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#10 Warning
+Gated clock check  
+Net How_to_play/Game/Pine_tree3/pixel_data0 is a gated clock net sourced by a combinational pin How_to_play/Game/Pine_tree3/pixel_data_reg[15]_i_1__5/O, cell How_to_play/Game/Pine_tree3/pixel_data_reg[15]_i_1__5. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#11 Warning
+Gated clock check  
+Net How_to_play/Game/Pine_tree4/pixel_data0 is a gated clock net sourced by a combinational pin How_to_play/Game/Pine_tree4/pixel_data_reg[15]_i_1__6/O, cell How_to_play/Game/Pine_tree4/pixel_data_reg[15]_i_1__6. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#12 Warning
+Gated clock check  
+Net How_to_play/Ready_Set_Go/E[0] is a gated clock net sourced by a combinational pin How_to_play/Ready_Set_Go/pixel_data_out_reg[15]_i_2__0/O, cell How_to_play/Ready_Set_Go/pixel_data_out_reg[15]_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#13 Warning
+Gated clock check  
+Net How_to_play/Self_driven_Car/Self_Landscape/Pine_tree1/pixel_data0 is a gated clock net sourced by a combinational pin How_to_play/Self_driven_Car/Self_Landscape/Pine_tree1/pixel_data_reg[15]_i_1__9/O, cell How_to_play/Self_driven_Car/Self_Landscape/Pine_tree1/pixel_data_reg[15]_i_1__9. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#14 Warning
+Gated clock check  
+Net How_to_play/Self_driven_Car/Self_Landscape/Pine_tree2/pixel_data0 is a gated clock net sourced by a combinational pin How_to_play/Self_driven_Car/Self_Landscape/Pine_tree2/pixel_data_reg[15]_i_1__10/O, cell How_to_play/Self_driven_Car/Self_Landscape/Pine_tree2/pixel_data_reg[15]_i_1__10. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#15 Warning
+Gated clock check  
+Net How_to_play/Self_driven_Car/Self_Landscape/Pine_tree3/pixel_data0 is a gated clock net sourced by a combinational pin How_to_play/Self_driven_Car/Self_Landscape/Pine_tree3/pixel_data_reg[15]_i_1__13/O, cell How_to_play/Self_driven_Car/Self_Landscape/Pine_tree3/pixel_data_reg[15]_i_1__13. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#16 Warning
+Gated clock check  
+Net How_to_play/Self_driven_Car/Self_Landscape/Pine_tree4/pixel_data0 is a gated clock net sourced by a combinational pin How_to_play/Self_driven_Car/Self_Landscape/Pine_tree4/pixel_data_reg[15]_i_1__14/O, cell How_to_play/Self_driven_Car/Self_Landscape/Pine_tree4/pixel_data_reg[15]_i_1__14. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#17 Warning
+Gated clock check  
+Net How_to_play/pixel_index_calculation_reg[15]_i_2_n_0 is a gated clock net sourced by a combinational pin How_to_play/pixel_index_calculation_reg[15]_i_2/O, cell How_to_play/pixel_index_calculation_reg[15]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#18 Warning
+Gated clock check  
+Net OLED1/spi_word_reg[24]_34[0] is a gated clock net sourced by a combinational pin OLED1/pixel_data_reg[15]_i_1/O, cell OLED1/pixel_data_reg[15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#19 Warning
+Gated clock check  
+Net OLED1/spi_word_reg[24]_47[0] is a gated clock net sourced by a combinational pin OLED1/pixel_data_reg[15]_i_1__0/O, cell OLED1/pixel_data_reg[15]_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#20 Warning
+Gated clock check  
+Net OLED1/spi_word_reg[31]_154[0] is a gated clock net sourced by a combinational pin OLED1/pixel_data_reg[15]_i_1__7/O, cell OLED1/pixel_data_reg[15]_i_1__7. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#21 Warning
+Gated clock check  
+Net OLED1/spi_word_reg[31]_158[0] is a gated clock net sourced by a combinational pin OLED1/pixel_data_reg[15]_i_1__8/O, cell OLED1/pixel_data_reg[15]_i_1__8. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#22 Warning
+Gated clock check  
+Net OLED1/spi_word_reg[34]_20 is a gated clock net sourced by a combinational pin OLED1/pixel_data_reg[0]_i_1/O, cell OLED1/pixel_data_reg[0]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#23 Warning
+Gated clock check  
+Net OLED1/spi_word_reg[37]_11[0] is a gated clock net sourced by a combinational pin OLED1/pixel_data_reg[15]_i_1__4/O, cell OLED1/pixel_data_reg[15]_i_1__4. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#24 Warning
+Gated clock check  
+Net OLED1/spi_word_reg[37]_6[0] is a gated clock net sourced by a combinational pin OLED1/pixel_data_reg[15]_i_1__3/O, cell OLED1/pixel_data_reg[15]_i_1__3. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#25 Warning
+Gated clock check  
+Net OLED1/spi_word_reg[39]_60[0] is a gated clock net sourced by a combinational pin OLED1/pixel_data_reg[15]_i_1__11/O, cell OLED1/pixel_data_reg[15]_i_1__11. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#26 Warning
+Gated clock check  
+Net OLED1/spi_word_reg[39]_64[0] is a gated clock net sourced by a combinational pin OLED1/pixel_data_reg[15]_i_1__12/O, cell OLED1/pixel_data_reg[15]_i_1__12. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#27 Warning
+Gated clock check  
+Net OLED1/spi_word_reg[39]_95[0] is a gated clock net sourced by a combinational pin OLED1/pixel_data_out_reg[15]_i_2/O, cell OLED1/pixel_data_out_reg[15]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#28 Warning
+Gated clock check  
+Net OLED1/spi_word_reg[39]_97 is a gated clock net sourced by a combinational pin OLED1/pixel_data_reg[15]_i_2__15/O, cell OLED1/pixel_data_reg[15]_i_2__15. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#29 Warning
+Gated clock check  
+Net volume1/CLK is a gated clock net sourced by a combinational pin volume1/firework_count_reg[2]_i_2/O, cell volume1/firework_count_reg[2]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+
